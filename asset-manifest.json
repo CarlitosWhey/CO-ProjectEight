@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CO-ProjectEight/static/css/main.e073ef73.css",
+    "main.js": "/CO-ProjectEight/static/js/main.137dd224.js",
+    "static/js/453.7e576a7f.chunk.js": "/CO-ProjectEight/static/js/453.7e576a7f.chunk.js",
+    "index.html": "/CO-ProjectEight/index.html",
+    "main.e073ef73.css.map": "/CO-ProjectEight/static/css/main.e073ef73.css.map",
+    "main.137dd224.js.map": "/CO-ProjectEight/static/js/main.137dd224.js.map",
+    "453.7e576a7f.chunk.js.map": "/CO-ProjectEight/static/js/453.7e576a7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e073ef73.css",
+    "static/js/main.137dd224.js"
+  ]
+}
