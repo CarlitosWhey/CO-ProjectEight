@@ -1,0 +1,297 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+/* General Styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+
+nav {
+  height: 70px;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px #ccc;
+  position: fixed;
+}
+
+.nav-left, .nav-right{
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img{
+  width: 90px;
+}
+
+.nav-left input {
+  height: 40px;
+  width: 300px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background-color: #eee;
+}
+
+.profile-pic{
+  background-image: url(https://i.imgur.com/nq8M5sx.jpg);
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.nav-right a{
+  text-decoration: none;
+  color: #333;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: grid;
+  place-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.nav-right a > i{
+  font-size: 18px;
+}
+
+/* Container Styles */
+
+.container {
+  background-color: #eee;
+  padding-top: 70px;
+  display: flex;
+}
+
+/* Left Panel Styles */
+
+.left-panel{
+  width: 400px;
+}
+
+.left-panel ul{
+  padding: 10px 0px;
+}
+
+.left-panel ul li{
+  list-style: none;
+  display: flex;
+  padding: .7rem 1rem;
+  align-items: center;
+  transition: .3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-panel ul li:hover{
+  background-color: #ddd;
+}
+
+.left-panel ul li p{
+  margin-left: 10px;
+}
+
+.left-panel ul li i{
+  font-size: 25px;
+}
+
+.left-panel ul li > i.fa-book{
+  color: tomato;
+}
+
+.left-panel ul li > i.fa-television{
+  color: #65cbe9;
+}
+
+.left-panel ul li > i.fa-users{
+  color:  #9cadce;
+}
+
+.left-panel ul li > i.fa-line-chart{
+  color: #55d6c2;
+}
+
+.left-panel ul li > i.fa-shopping-cart{
+  color: #d3ab9e;
+}
+
+.left-panel ul li > i.fa-ticket{
+  color: #ff686b;
+}
+
+.footer-links{
+  padding: 5px 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+}
+
+/* Center Panel and Form Styles */
+
+.center-panel{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container{
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1{
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+#recipe-form input{
+  height: 40px;
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background-color: #eee;
+}
+
+#recipe-form textarea{
+  height: 100px;
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  resize: none;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+#recipe-form button{
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #80abdd;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  max-width: 75px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#recipe-form button:hover{
+  background-color: #6c9ed8;
+}
+
+/* Recipe Card Styles */
+
+.recipe-card{
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card ul, .recipe-card ol {
+  max-height: auto;
+  padding: 10px;
+}
+
+.post-top{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-top i{
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.post-content{
+  font-size: 16px;
+  font-weight: normal;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-content img{
+  width: 100%;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+
+.post-bottom{
+  display: flex;
+  box-shadow: 1px solid #ddd;
+  justify-content: space-between;
+  padding: 5px 5px 0px 5px;
+}
+
+.post-bottom i{
+  margin-right: 5px;
+}
+
+.action{
+  padding: 10px;
+  border-radius: 10px;
+  transition: .3s ease-in;
+  cursor: pointer;
+}
+
+.action:hover{
+  background-color: #eee;
+}
+
+/* Right Panel and Advertisment Styles */
+
+.right-panel{
+  width: 400px;
+  margin-right: auto;
+}
+
+.advertisement img{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 25px;
+}
